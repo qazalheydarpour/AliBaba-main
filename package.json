@@ -1,12 +1,15 @@
 {
+  "homepage": "http://qazalheydarpour.github.io/Alibaba-main",
   "name": "ali-baba",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d build",
     "lint": "next lint"
-  },
+  }, 
   "dependencies": {
     "@date-io/date-fns-jalali": "^2.13.1",
     "@date-io/jalaali": "^2.13.1",
@@ -30,6 +33,7 @@
   "devDependencies": {
     "@mui/lab": "^5.0.0-alpha.66",
     "eslint": "8.7.0",
-    "eslint-config-next": "12.0.8"
+    "eslint-config-next": "12.0.8",
+    "gh-pages": "^6.1.1"
   }
 }
